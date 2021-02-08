@@ -14,7 +14,8 @@ COBBLE = []
 BRANDS.each_with_index do |brand, i|
   if brand.condition == "new"
   COBBLE << brand
-
+end
+end
 
 
   def cobble

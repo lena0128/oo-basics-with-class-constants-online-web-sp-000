@@ -12,7 +12,7 @@ BRANDS = []
 COBBLE = []
 
 BRANDS.each_with_index do |brand, i|
-  if brand.condition == "new"
+  if brand[i] == "new"
   COBBLE << brand
 end
 end

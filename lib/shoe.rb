@@ -14,7 +14,7 @@ COBBLE = []
 def condition=(condition)
   @condition = "new"
   COBBLE << Shoe.new
-
+end
 
   def cobble
     self.condition = "new"

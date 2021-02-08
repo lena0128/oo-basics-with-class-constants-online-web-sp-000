@@ -1,6 +1,6 @@
 class Shoe
-  attr_accessor :color, :size, :material
-  attr_reader :brand, :condition
+  attr_accessor :color, :size, :material, :condition
+  attr_reader :brand,
 
 BRANDS = []
 
@@ -11,10 +11,11 @@ BRANDS = []
 
 COBBLE = []
 
-def condition=(condition)
-  @condition = "new"
-  COBBLE << Shoe.new
-end
+BRANDS.each_with_index do |brand, i|
+  if brand.condition == "new"
+  COBBLE << brand
+
+
 
   def cobble
     self.condition = "new"

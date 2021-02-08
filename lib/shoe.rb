@@ -9,13 +9,7 @@ BRANDS = []
     BRANDS << brand
   end
 
-COBBLE = []
 
-BRANDS.each_with_index do |brand, i|
-  if brand[i] == "new"
-  COBBLE << brand
-end
-end
 
   def cobble
     self.condition = "new"
